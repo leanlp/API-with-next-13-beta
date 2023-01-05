@@ -1,4 +1,5 @@
 import Link from "next/link"
+import styles from "./Navigation.module.css"
 
 
 const links = [{
@@ -7,15 +8,19 @@ const links = [{
 }, {
   label: 'About',
   route: '/about'
-}]
+}, {
+  label: 'Post',
+  route: "post"
+}
+]
 
 export function Navigation() {
   return (
 
 
-<header>
+<header className={styles.header}>
 <nav>
-  <ul>
+  <ul className={styles.navigation}>
 
     {links.map(({ label, route }) => (
       <li key={route}>
