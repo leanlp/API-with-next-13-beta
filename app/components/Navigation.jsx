@@ -9,8 +9,8 @@ const links = [{
   label: 'About',
   route: '/about'
 }, {
-  label: 'Post',
-  route: "post"
+  label: 'Posts',
+  route: "posts"
 }
 ]
 
