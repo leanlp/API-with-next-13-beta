@@ -2,15 +2,19 @@ import Link from "next/link"
 import styles from "./Navigation.module.css"
 
 
-const links = [{
-  label: 'Home',
-  route: '/'
-}, {
-  label: 'About',
-  route: '/about'
-}, {
+const links = [
+  //   {
+//   label: 'Home',
+//   route: '/'
+// },
+
+ {
   label: 'Posts',
   route: "posts"
+},
+ {
+  label: 'About',
+  route: '/about'
 }
 ]
 
