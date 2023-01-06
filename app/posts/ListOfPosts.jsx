@@ -12,17 +12,21 @@ export async function ListOfPosts() {
 
 
     return (
-
+         
         posts.slice(0, 9).map(post => (
             <article key={post.id}>
+                <>
+                <marquee style={{background: "#fff", color: "purple"}}> api next 13, beta test. </marquee>
                 <Link href="/posts/[id]" as={`/posts/${post.id}`}>
                 <h2 style={{ color: '#09f' }}>{post.title}</h2>
                 <p>{post.body}</p>
                 <LikeButton id={post.id}/>
                 </Link>
+                </>
             </article>
+            
         ))
-
+       
 
     )
 }
