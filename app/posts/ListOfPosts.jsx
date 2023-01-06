@@ -14,7 +14,7 @@ export async function ListOfPosts() {
 
     return (
          
-        posts.slice(0, 9).map(post => (
+        posts.slice(0, 19).map(post => (
             <article key={post.id}>
                 <>
                 <marquee style={{background: "#fff", color: "purple"}}> api next 13, beta test. </marquee>
